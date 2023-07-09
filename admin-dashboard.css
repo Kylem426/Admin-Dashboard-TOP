@@ -102,7 +102,7 @@ html {
 .dashboardContent {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 #cogP {
@@ -131,7 +131,7 @@ html {
 .headerTop {
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: 50px 5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 5fr 1fr 1fr 1fr;
     align-items: center;
 }
 
@@ -192,6 +192,7 @@ html {
     display: flex;
     grid-column: 4/6;
     gap: 20px;
+    padding-left: 50px;
 }
 
 .footerMorgan {
@@ -203,14 +204,13 @@ html {
 .contentBody {
     background-color: lightgrey;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 0.5fr 5fr 4.5fr;
 }
 
 .cardContainer {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 2/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -230,6 +230,7 @@ html {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
+    color: grey;
 }
 
 .orange {
@@ -242,6 +243,7 @@ html {
 
 .bold {
     font-weight: bold;
+    color: black;
 }
 
 .iconContainer {
@@ -263,16 +265,70 @@ html {
 .announcements {
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
-    grid-row: 1/2;
+    margin-left: 20px;
+    margin-top: 10px;
+    grid-row: 2/3;
+    grid-column: 2/3;
     display: grid;
     grid-row: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 20px 1fr 20px;
+    width: 250px;
+}
+
+.announcements p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    grid-column: 2/3;
+    color: grey;
+}
+
+.announcementTop,
+.announcementMiddle {
+    border-bottom: 1px solid lightgrey;
 }
 
 .trending {
     background-color: white;
     border-radius: 10px;
     margin: 20px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trending p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    color: grey;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bodyHeader {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projectsP {
+    grid-column: 1/2;
+    padding-left: 15px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.announcementsP {
+    grid-column: 4/5;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 130px;
 }
